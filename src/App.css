@@ -1,0 +1,79 @@
+/* Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f4f7;        /* Soft professional background */
+}
+
+/* Center Wrapper */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;    
+}
+
+/* Form Card */
+.feedback-card {
+  background: #ffffff;
+  padding: 40px;
+  width: 420px;
+  border-radius: 12px;
+
+  /* Wide, soft border */
+  border: 3px solid #e0e0e0;
+
+  /* subtle shadow */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Heading */
+.feedback-card h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+/* Label Style */
+label {
+  font-weight: bold;
+  color: #444;
+}
+
+/* Select + Textarea Styling */
+select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+  border: 2px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+/* On Focus */
+select:focus, textarea:focus {
+  border-color: #6b9bff;   /* soft professional blue */
+  box-shadow: 0 0 5px rgba(107,155,255,0.4);
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background: #4a73ff;    /* Modern blue */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background: #385be0;
+}
