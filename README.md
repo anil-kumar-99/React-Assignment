@@ -34,7 +34,7 @@ Users can submit their feedback through a form and view all submitted feedback o
 
 ### **Clone the project**
 ```sh
-git clone <your-repo-link>
+git clone https://github.com/anil-kumar-99/React-Assignment
 cd feedback-app
 
 ### ****Install Dependencies****
