@@ -1,16 +1,64 @@
-# React + Vite
+#  React Feedback App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and clean feedback collection application built using **React**, **React Router**, **Custom Hooks**, and **JSON Server**.  
+Users can submit their feedback through a form and view all submitted feedback on a separate page.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Project Features
 
-## React Compiler
+- Modern UI with centered form and responsive feedback list.
+- Stores feedback using **JSON Server** (fake REST API backend).
+- Uses a **custom hook** for managing all feedback logic.
+- Implements:
+  - `useEffect` for fetching feedback.
+  - `useCallback` for API methods.
+  - `useMemo` (optional computation example included).
+- Organized folder structure for scalability.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Folder Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+/src
+├── components
+│ └── FeedbackForm.jsx
+├── hooks
+│ └── useFeedback.jsx
+├── pages
+│ └── FeedbackPage.jsx
+├── App.jsx
+├── main.jsx
+└── index.css
+
+### **Clone the project**
+```sh
+git clone <your-repo-link>
+cd feedback-app
+
+### ****Install Dependencies****
+npm install
+
+🗄️ 2. Setup JSON Server (Backend)
+Start JSON Server
+
+Your db.json should look like:
+
+{
+  "feedback": []
+}
+
+
+**Run the server:**
+
+npx json-server --watch db.json --port 4000
+
+
+This creates a fake REST API at:
+
+GET    http://localhost:4000/feedback
+POST   http://localhost:4000/feedback
+
+**Run the React App**
+npm run dev
